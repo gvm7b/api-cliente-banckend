@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "31a59f50-e325-4a79-9bac-cc50c7db2afb",
+		"name": "Endereco",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29003288"
+	},
+	"item": [
+		{
+			"name": "Carregar Endereco",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar Endereco",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/endereco/criar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"endereco",
+						"criar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Endereco",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rua\": \"dos ipes\",\r\n    \"bairro\": \"4 linha\",\r\n    \"estado\": \"SC\",\r\n    \"nomeResponsavel\": \"Victor\",\r\n    \"cidade\": \"Criciuma\",\r\n    \"clienteId\": \"2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/endereco/atualizar/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"endereco",
+						"atualizar",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Endereco",
+			"request": {
+				"method": "DELETE",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Carregar By id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/cliente-end
+    password: postgres
+    username: postgres
+    driverClassName: org.postgresql.Driver
+  mail:
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: 'true'
+          auth: 'true'
+    host: smtp.gmail.com
+    username: guilhermevmachado558@gmail.com
+    password: "icgz npsb ezma xual"
+    port: '587'
