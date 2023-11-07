@@ -5,7 +5,7 @@ spring:
       ddl-auto: update
     show-sql: true
   datasource:
-    url: jdbc:postgresql://${DB_HOST}:5432/produtos_banco
+    url: jdbc:postgresql://94c421e9f2c5b595dc1700bb6f353f9a:5432/produtos_banco
     password: 94481bb615c4337663eace99f9ed8fe0
     username: admin
     driverClassName: org.postgresql.Driver
