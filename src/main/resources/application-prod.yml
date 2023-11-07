@@ -6,7 +6,7 @@ spring:
     show-sql: true
   datasource:
     url: jdbc:postgresql://94c421e9f2c5b595dc1700bb6f353f9a:5432/produtos_banco
-    password: 94481bb615c4337663eace99f9ed8fe0
+    password: TnSt4XBX5kzE2WOQvQS5VvNOCu0c1qvj
     username: admin
     driverClassName: org.postgresql.Driver
   mail:
