@@ -1,0 +1,22 @@
+spring:
+  jpa:
+    database: POSTGRESQL
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:postgresql://${DB_HOST}:5432/produtos_banco
+    password: 94481bb615c4337663eace99f9ed8fe0
+    username: admin
+    driverClassName: org.postgresql.Driver
+  mail:
+    properties:
+      mail:
+        smtp:
+          starttls:
+            enable: 'true'
+          auth: 'true'
+    host: smtp.gmail.com
+    username: guilhermevmachado558@gmail.com
+    password: "icgz npsb ezma xual"
+    port: '587'
