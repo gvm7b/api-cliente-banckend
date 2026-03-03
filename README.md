@@ -1,7 +1,8 @@
 #  API Cliente Backend
 
-API REST desenvolvida com **Spring Boot** para gerenciamento de clientes e envio de e-mails.  
-O projeto simula um sistema básico com cadastro de usuários e funcionalidades de comunicação via e-mail (texto e HTML).
+API REST desenvolvida com **Spring Boot** para gerenciamento de clientes, endereços e envio de e-mails.  
+
+📚 Este projeto foi desenvolvido em **2023 durante um curso no SENAC**, com o objetivo de aplicar conceitos fundamentais de desenvolvimento backend utilizando Java e Spring Boot.
 
 ---
 
@@ -25,6 +26,10 @@ O projeto simula um sistema básico com cadastro de usuários e funcionalidades 
 - Atualizar cliente
 - Deletar cliente (Soft Delete)
 
+###  Endereço
+- Cadastro de endereço vinculado ao cliente
+- Associação entre cliente e endereço
+
 ###  Email
 - Envio de email simples
 - Envio de email com HTML
@@ -35,16 +40,17 @@ O projeto simula um sistema básico com cadastro de usuários e funcionalidades 
 
 - API REST
 - CRUD completo
+- Relacionamento entre entidades (Cliente ↔ Endereço)
 - Integração com serviço de email (SMTP)
 - Soft Delete com Hibernate
-- Boas práticas com JPA
-- Arquitetura em camadas
+- Mapeamento com JPA
+- Estrutura em camadas
 
 ---
 
 ##  Soft Delete
 
-O projeto utiliza exclusão lógica (soft delete), ou seja, os dados não são removidos do banco, apenas marcados como deletados:
+O projeto utiliza exclusão lógica (soft delete), garantindo que os dados não sejam removidos permanentemente do banco:
 
 ```java
 @SQLDelete(sql = "UPDATE cliente SET delete_at = now() WHERE id=?")
